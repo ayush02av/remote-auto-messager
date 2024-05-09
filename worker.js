@@ -3,8 +3,6 @@
  * Bull Queue Job
  */
 
-// TODO: remove consoles
-// TODO: slack channel dynamic from job.data
 // TODO: switch case for scheduled or now messages
 
 import Slack from '@slack/bolt'
@@ -19,19 +17,22 @@ const slackApp = new Slack.App({
 })
 
 Job.process(async function (job) {
-    console.log(job.id)
-    console.log(job.data)
+    const {
+        body,
+        schedule,
+        channels,
+        users,
+        timezone,
+        sender,
+    } = job.data
 
-    console.log(process.env.SLACK_BOT_TOKEN)
-    console.log(process.env.SLACK_CHANNEL)
-    console.log(job.data.message)
+    // const slackRespone = await slackApp.client.chat.postMessage({
+    //     token: process.env.SLACK_BOT_TOKEN,
+    //     channel: "U06QB3M66G5",
+    //     text: job.data.message
+    // })
 
-    const slackRespone = await slackApp.client.chat.postMessage({
-        token: process.env.SLACK_BOT_TOKEN,
-        channel: "U06QB3M66G5",
-        text: job.data.message
-    })
-    console.log("slack response sent")
-    if (slackRespone == null) console.log("null")
-    else console.log(slackRespone)
+    // console.log("slack response sent")
+    // if (slackRespone == null) console.log("null")
+    // else console.log(slackRespone)
 })
