@@ -1,0 +1,146 @@
+{
+    opts: {
+      attempts: 1,
+      delay: 0,
+      timestamp: 1715227950530,
+      backoff: undefined
+    },
+    name: '__default__',
+    queue: Queue {
+      name: 'AutoMessager',
+      token: 'bea0dcdc-7d6e-46e8-ae44-4aff0aff920b',
+      keyPrefix: 'bull',
+      clients: [
+            [Commander
+            ],
+            [Commander
+            ],
+            [Commander
+            ]
+        ],
+      clientInitialized: true,
+      _events: [Object: null prototype
+        ] {
+        close: [Array
+            ],
+        error: [Function (anonymous)
+            ]
+        },
+      _eventsCount: 2,
+      _initializing: Promise { undefined
+        },
+      handlers: { __default__: [Function (anonymous)
+            ]
+        },
+      processing: [ '__default__: 0': [Promise
+            ]
+        ],
+      retrieving: 0,
+      drained: false,
+      settings: {
+        lockDuration: 30000,
+        stalledInterval: 30000,
+        maxStalledCount: 1,
+        guardInterval: 5000,
+        retryProcessDelay: 5000,
+        drainDelay: 5,
+        backoffStrategies: {},
+        isSharedChildPool: false,
+        lockRenewTime: 15000
+        },
+      metrics: undefined,
+      timers: TimerManager { idle: false, listeners: [], timers: [Object
+            ]
+        },
+      moveUnlockedJobsToWait: [Function: bound
+        ],
+      processJob: [Function: bound
+        ],
+      getJobFromId: [Function: bound
+        ] AsyncFunction,
+      keys: {
+        '': 'bull:AutoMessager:',
+        active: 'bull:AutoMessager:active',
+        wait: 'bull:AutoMessager:wait',
+        waiting: 'bull:AutoMessager:waiting',
+        paused: 'bull:AutoMessager:paused',
+        resumed: 'bull:AutoMessager:resumed',
+        'meta-paused': 'bull:AutoMessager:meta-paused',
+        id: 'bull:AutoMessager:id',
+        delayed: 'bull:AutoMessager:delayed',
+        priority: 'bull:AutoMessager:priority',
+        'stalled-check': 'bull:AutoMessager:stalled-check',
+        completed: 'bull:AutoMessager:completed',
+        failed: 'bull:AutoMessager:failed',
+        stalled: 'bull:AutoMessager:stalled',
+        repeat: 'bull:AutoMessager:repeat',
+        limiter: 'bull:AutoMessager:limiter',
+        drained: 'bull:AutoMessager:drained',
+        progress: 'bull:AutoMessager:progress'
+        },
+      delayedTimestamp: 1.7976931348623157e+308,
+      _initializingProcess: Promise {
+            null
+        },
+      errorRetryTimer: {},
+      subscriberInitialized: true,
+      registeredEvents: { delayed: [Promise
+            ]
+        },
+      bclientInitialized: true,
+      delayTimer: Timeout {
+        _idleTimeout: 5000,
+        _idlePrev: [TimersList
+            ],
+        _idleNext: [TimersList
+            ],
+        _idleStart: 928,
+        _onTimeout: [Function (anonymous)
+            ],
+        _timerArgs: undefined,
+        _repeat: null,
+        _destroyed: false,
+            [Symbol(refed)
+            ]: true,
+            [Symbol(kHasPrimitive)
+            ]: false,
+            [Symbol(asyncId)
+            ]: 164,
+            [Symbol(triggerId)
+            ]: 0
+        },
+      moveUnlockedJobsToWaitInterval: Timeout {
+        _idleTimeout: 30000,
+        _idlePrev: [TimersList
+            ],
+        _idleNext: [TimersList
+            ],
+        _idleStart: 1155,
+        _onTimeout: [Function: bound
+            ],
+        _timerArgs: undefined,
+        _repeat: 30000,
+        _destroyed: false,
+            [Symbol(refed)
+            ]: true,
+            [Symbol(kHasPrimitive)
+            ]: false,
+            [Symbol(asyncId)
+            ]: 168,
+            [Symbol(triggerId)
+            ]: 0
+        }
+    },
+    data: { type: 'slack', data: 'send this message'},
+    _progress: 0,
+    delay: 0,
+    timestamp: 1715227950530,
+    stacktrace: [],
+    returnvalue: null,
+    attemptsMade: 0,
+    toKey: [Function: wrapper
+    ],
+    id: '1',
+    processedOn: 1715227981326,
+    failedReason: undefined
+}
