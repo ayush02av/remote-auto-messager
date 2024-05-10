@@ -76,6 +76,11 @@ app.post('/message', async function (req, res) {
     })
 })
 
+app.post('/interact', async function (req, res) {
+    console.log(req.body)
+    res.send('OK')
+})
+
 app.listen(port, function () {
     console.log("Server started up and running")
 })
