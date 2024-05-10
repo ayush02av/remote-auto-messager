@@ -77,7 +77,7 @@ app.post('/message', async function (req, res) {
 })
 
 app.post('/interact', async function (req, res) {
-    console.log(req.body)
+    console.log(req)
     res.send('OK')
 })
 
