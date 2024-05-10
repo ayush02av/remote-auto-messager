@@ -77,8 +77,11 @@ app.post('/message', async function (req, res) {
 })
 
 app.post('/interact', async function (req, res) {
-    console.log(req)
-    res.send('OK')
+    console.log(req.headers)
+    console.log(req.body)
+    setTimeout(function () {
+        res.send('ok')
+    }, 5000)
 })
 
 app.listen(port, function () {
